@@ -185,7 +185,6 @@ main {
 }
 
 .item-section {
-  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -262,7 +261,7 @@ main {
 }
 
 .name-and-position {
-  padding: 32px 0;
+  margin: 32px 0;
 }
 
 .name {
@@ -330,7 +329,6 @@ main {
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
-  padding-bottom: 32px;
 }
 
 .section-portfolio {
@@ -354,6 +352,7 @@ main {
 .app-kategory {
   padding-top: 32px;
   padding-bottom: 32px;
+  border: 1px solid #e7e9fc;
   padding-left: 16px;
 }
 
@@ -493,7 +492,7 @@ main {
 
 .footer .logo {
   display: flex;
-  margin: 0 auto 16px auto;
+  margin: 0 auto;
 }
 
 .submit-button {
@@ -762,18 +761,19 @@ main {
   .list {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   .address {
     display: flex;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .address .list {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    font-size: 12px;
   }
 
   .nav {
@@ -817,6 +817,7 @@ main {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+    max-width: 766px;
   }
 
   .form {
@@ -852,8 +853,20 @@ main {
   .phone-menu {
     display: none;
   }
+
   .container {
     max-width: 1158px;
+  }
+
+  .link {
+    background-color: #ffffff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .list-section {
@@ -861,6 +874,12 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 24px;
+  }
+
+  .address .list {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
   }
 
   .list-portfolio {
@@ -917,16 +936,8 @@ main {
     justify-content: space-between;
   }
 
-  .logo {
-    margin-right: 76px;
-  }
-
   .first-section {
     max-width: 1440px;
-  }
-
-  .address .list {
-    flex-direction: row;
   }
 
   .list-portfolio {
@@ -967,6 +978,16 @@ main {
 
   .footer-item-logo {
     margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .third-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
   }
 }
 
@@ -1065,6 +1086,9 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 72px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .phone-menu-modal .close-modal {
@@ -1103,7 +1127,17 @@ main {
     margin-bottom: 40px;
   }
 
-  .phone-menu .list-item:last-child {
-    margin-bottom: 168px;
+  .menu-list {
+    margin-bottom: 40px;
+  }
+
+  .address-menu .icon-list {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .footer {
+    padding-left: 108px;
   }
 }
